@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expenses Calculation</title>
+    <style>
+        #main_container {
+            height: 600px;
+            width: 600px;
+            border: 2px solid white;
+            padding-top: 5px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+        .container {
+            display: flex;
+        }
+        .container1 {
+            margin: 5px;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        input {
+            height: 25px;
+            width: 350px;
+            border-radius: 10px;
+        }
+        #calculation {
+            height: 30px;
+            width: 150px;
+            border-radius: 20px;
+            margin-left: 270px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Daily Expenses Calculation</h1>
+    <div class="container">
+        <div id="main_container">
+            <div class="container1">
+                <label for="breakfast">Breakfast</label>
+                <br><br>
+                <input type="text" name="breakfast" placeholder="How much did your breakfast cost this morning?">
+            </div>
+            <div class="container1">
+                <label for="fare">Fare</label>
+                <br><br>
+                <input type="text" name="fare" placeholder="What was the bus fare to the university?">
+            </div>
+            <div class="container1">
+                <label for="lunch">Lunch</label>
+                <br><br>
+                <input type="text" name="lunch" placeholder="How much did you pay for lunch?">
+            </div>
+            <div class="container1">
+                <label for="snacks">Snacks</label>
+                <br><br>
+                <input type="text" name="snacks" placeholder="How much?">
+            </div>
+            <div class="container1">
+                <label for="returning_home">Returning Home</label>
+                <br><br>
+                <input type="text" name="returning_home" placeholder="How much rent did you pay for the bus?">
+            </div>
+            <div class="container1">
+                <label for="dinner">Dinner</label>
+                <br><br>
+                <input type="text" name="dinner" placeholder="How much?">
+            </div>
+            <button id="calculation">Calculate</button>
+        </div>
+        <div id="main_container">
+            <h3>Total Expenses of a Day</h3>
+            <br>
+            <ul>
+                <li>Breakfast</li>
+                <li>University Travel From Bus</li>
+                <li>Lunch / Break</li>
+                <li>Return Home from University</li>
+                <li>Snacks</li>
+                <li>Dinner</li>
+                <li>Ice cream</li>
+                <br><br><br>
+                <p>Total Price: <b id="total"></b></p>
+            </ul>
+        </div>
+    </div>
+    <script src="budget.js"></script>
+</body>
+</html>
